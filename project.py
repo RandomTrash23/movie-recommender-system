@@ -8,7 +8,7 @@ import pickle
 movie = pickle.load(open('movie.pkl','rb'))
 movies_list = movie['title'].values
 
-cosine_similarity = pickle.load(open('cosine_similarity.pkl','rb'))
+cosine_similarity = pickle.load(open('cosinesimilarity.pkl','rb'))
 count = pickle.load(open('count.pkl','rb'))
 
 vote_counts = movie['vote_count'].astype('int')
