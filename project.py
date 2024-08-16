@@ -52,7 +52,7 @@ movie_name = st.selectbox(
 
 option = st.selectbox(
     "Interested in getting recommendations from any specific year or decade?",
-    ("year", "decade", "None(without any time constraint)"),
+    ("None(suggest all year)","year", "decade"),
 )
 if option=='year':
     number = st.number_input("Select the year (max - 2016)")
@@ -64,7 +64,7 @@ if option=='decade':
     
 
 if st.button("Recommend"):
-    if option=='None(without any time constraint)':
+    if option=='None(suggest all year)':
         recom = improved_recommendations(movie_name,movie)
         for i in recom:
             st.write(i)
