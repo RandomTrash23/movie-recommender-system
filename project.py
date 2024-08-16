@@ -52,7 +52,7 @@ movie_name = st.selectbox(
 
 option = st.selectbox(
     "Interested in getting recommendations from any specific year or decade?",
-    ("None (suggest all year)","year", "decade"),
+    ("None (suggest all year)", "decade", "year"),
 )
 if option=='year':
     number = st.number_input("Select the year (max - 2016)")
